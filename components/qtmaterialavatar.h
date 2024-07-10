@@ -35,6 +35,8 @@ public:
     void setImage(const QImage &image);
     void setIcon(const QIcon &icon);
 
+    QImage image() const;
+
     Material::AvatarType type() const;
 
 protected:

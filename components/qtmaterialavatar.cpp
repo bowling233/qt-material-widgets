@@ -214,6 +214,16 @@ void QtMaterialAvatar::setIcon(const QIcon &icon)
     update();
 }
 
+QImage QtMaterialAvatar::image() const
+{
+    if(type() != Material::ImageAvatar)
+    {
+        return QImage();
+    }
+    Q_D(const QtMaterialAvatar);
+    return d->image;
+}
+
 Material::AvatarType QtMaterialAvatar::type() const
 {
     Q_D(const QtMaterialAvatar);
