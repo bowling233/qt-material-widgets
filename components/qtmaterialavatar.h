@@ -9,6 +9,7 @@ class QtMaterialAvatarPrivate;
 class QtMaterialAvatar : public QWidget
 {
     Q_OBJECT
+    Q_PROPERTY(QImage image READ image WRITE setImage)
 
 public:
     explicit QtMaterialAvatar(QWidget *parent = 0);
